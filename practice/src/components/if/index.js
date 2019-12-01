@@ -1,7 +1,7 @@
 import React from 'react';
 
 const render = (condition = false, children = null) => {
-  return condition ? children : null;
+  return !!condition ? children : null;
 };
 
 export const If = props =>
